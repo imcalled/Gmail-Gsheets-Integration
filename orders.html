@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <title>Order Display Test</title>
+    <link rel="stylesheet"
+href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  </head>
+  <body style="padding:3em;">
+  <h1>Order</h1>
+    <ul>
+    <? for(var m=0; m<orders.length;m++){ ?>
+    <li><?= orders[m].getSubject() ?></li>
+    <p><?= orders[m].getPlainBody() ?></p>
+    <? } ?>
+    </ul>
+  </body>
+</html>
